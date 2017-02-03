@@ -131,8 +131,8 @@ public class SkiMatrixProblem {
 
     public static void findLongestPath(Cell[][] matrixOfArea) {
 
-        ArrayList<Cell> tempPath = new ArrayList<>();
-        ArrayList<Cell> finalPath = new ArrayList<>();
+        ArrayList<Cell> tempPath = new ArrayList<Cell>();
+        ArrayList<Cell> finalPath = new ArrayList<Cell>();
 
         for (int i = 0; i < matrixOfArea.length; i++) {
             for (int j = 0; j < matrixOfArea[i].length; j++) {

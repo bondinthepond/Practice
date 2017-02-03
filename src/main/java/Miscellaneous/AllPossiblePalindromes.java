@@ -9,14 +9,14 @@ public class AllPossiblePalindromes {
 
     public void findAllPalindromesIn(String s){
 
-        if (s.isEmpty()){
+        if (s.equals(" ")){
             System.out.println("String is empty");
         }
         if(s.length() == 1){
             System.out.println("Longest Palindrome" + s);
         }
 
-        Set<String> setOfPalindromes = new TreeSet<>();
+        Set<String> setOfPalindromes = new TreeSet<String>();
 
         for(int i = 1; i<s.length(); i++){
             returnIfThereIsAPalindromeBetween(i, i, s, setOfPalindromes);
