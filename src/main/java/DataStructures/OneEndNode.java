@@ -5,12 +5,10 @@ package DataStructures;
  */
 public class OneEndNode<T> {
 
-    public T getValue() {
-        return value;
-    }
+    public T getData() { return data; }
 
-    public void setValue(T value) {
-        this.value = value;
+    public void setData(T data) {
+        this.data = data;
     }
 
     public OneEndNode<T> getNextNode() {
@@ -21,6 +19,6 @@ public class OneEndNode<T> {
         this.nextNode = nextNode;
     }
 
-    private T value;
+    private T data;
     private OneEndNode<T> nextNode;
 }

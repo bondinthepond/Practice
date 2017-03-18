@@ -1,49 +1,51 @@
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import DataStructures.Trees.BST.BST;
+import DataStructures.Trees.TreeNode;
 
 /**
  * Created by aditya.mullela on 31/01/17.
  */
 public class Main3 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        // download chromeDriver, run it and provide the port number
-//        URL url = new URL("http://127.0.0.1:9515");
-//        WebDriver driver = new RemoteWebDriver(url, DesiredCapabilities.chrome());
-//        driver.get("http://www.google.com");
+        BST<Integer> binarySearchTree = new BST();
 
-        // download chromeDriver and set property by providing its location
-//        System.setProperty("webdriver.chrome.driver", "/Users/aditya.mullela/Downloads/chromedriver");
-//        WebDriver driver2 = new ChromeDriver();
-//        driver2.get("http://www.google.com");
 
-        // download geckoDriver, run it and provide the port number or set property - require for selenium versions > 3
-//        URL url1 = new URL("http://127.0.0.1:4444"); //require gecko driver
-//        WebDriver driver1 = new RemoteWebDriver(url1, DesiredCapabilities.firefox());
+        binarySearchTree.put(3);
+        binarySearchTree.put(1);
+        binarySearchTree.put(2);
+        binarySearchTree.put(0);
 
-//        WebDriver driver3  = new SafariDriver();
+//        System.out.println(binarySearchTree.findMinElement(root).data);
 
-        String excelFilePath = "/Users/aditya.mullela/git2/Selenium/Test2.xls";
+        binarySearchTree.put(5);
+        binarySearchTree.put(6);
+        binarySearchTree.put(4);
 
-        FileInputStream inputStream = new FileInputStream(new File(excelFilePath));
+        TreeNode root = binarySearchTree.getRootNode();
 
-        Workbook workbook = new HSSFWorkbook(inputStream);
-        Sheet firstSheet = workbook.getSheetAt(0);
-        Row row = firstSheet.getRow(0);
-        Cell cell = row.getCell(0);
-        String s = cell.getStringCellValue();
-        Cell cell1 = row.getCell(1);
-        String s1 = cell1.getStringCellValue();
+//        binarySearchTree.printInOrder(root);
+//
+//        binarySearchTree.printPreOrder(root);
 
-        System.out.println(s + s1);
+//        binarySearchTree.printLevelOrder(root);
 
-            }
-        }
+//        binarySearchTree.printBoundaryLeft(root);
+
+//        binarySearchTree.printBoundaryRight(root);
+
+//        binarySearchTree.printBoundary(root);
+
+//        System.out.println(binarySearchTree.findMaxElement(root).data);
+//
+//        System.out.println(binarySearchTree.findMinElement(root).data);
+
+//        System.out.println(binarySearchTree.findHeight(root));
+
+//        TreeNode node = new TreeNode(1);
+//
+//        System.out.println(binarySearchTree.findLevelOfGivenNode(root, node, 0));
+    }
+
+    }
+
