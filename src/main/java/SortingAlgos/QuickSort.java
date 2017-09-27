@@ -3,7 +3,7 @@ package SortingAlgos;
 /**
  * Created by aditya.mullela on 03/11/16.
  */
-public class QuickSort {
+public class    QuickSort {
 
     private Integer[] array;
 

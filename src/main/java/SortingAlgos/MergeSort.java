@@ -29,6 +29,7 @@ public class MergeSort {
 
     public void mergeSortBetween(int low, int high) {
 
+        System.out.println("Merger Sort Between " + low + " and " + high);
         if (low < high) {
 
             int middle = low + (high - low) / 2;
@@ -42,7 +43,7 @@ public class MergeSort {
     }
 
     public void merge (int low, int middle, int high) {
-
+        System.out.println("Merger Low " + low + " high " + high + " mid " + middle);
         for(int i = low;  i<=high; i++) {
             helper[i] = array[i];
         }
